@@ -1,7 +1,17 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <img src="../../resources/R-C.png" alt="">
+
+    <p>欢迎使用懒猫相册！</p>
+    <p>请开启相册权限享用更多功能。</p>
+    
+    <ion-button 
+      shape="round" 
+      color="tertiary"
+    >
+      开启相册权限
+    </ion-button>
+
   </div>
 </template>
 
@@ -17,6 +27,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
+img {
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+ion-button {
+  margin-top: 20px;
+}
 #container {
   text-align: center;
   position: absolute;
